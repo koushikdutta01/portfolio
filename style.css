@@ -1,0 +1,450 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    
+}
+/* NAVBAR */
+.navbar{
+    position:fixed; top:0; width:100%; z-index: 9999;
+    
+}
+.nababar{
+  background: #3f3f3f1e;
+  padding: 2% 0;
+  border-radius: 20px;
+    
+
+
+}
+.navbar-nav{
+  margin-right: 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-link:hover{
+  color: #03C988;
+}
+
+.navbar-brand{
+  margin-left: 3.5%;
+}
+/* HR */
+hr {
+  width: 7%;
+  border-style:dotted;
+  border-color: grey;
+  border-width: 10px;
+  border-top: whitesmoke ;
+  margin: 100px auto;
+}
+/* HERO_SECTION */
+ 
+  .detail{
+    margin-left: 22%;
+    margin-top: 13%;
+    
+  }
+
+  .detail h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #03C988;
+  }
+  .detail p{
+    color: white;
+    line-height: 22px;
+  }
+
+  .images{
+    width: 45%;
+    height: 60%;
+    position: absolute;
+    bottom: 20%;
+    right: 100px;
+  }
+  .images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+  }
+  
+  .images:hover .shape{
+    bottom: 40px;
+  }
+  .images:hover .boy{
+    left: 45%;
+  }
+  
+  
+  /* HERO_TEXT */
+  .hero {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    
+    position: relative;
+  }
+  .typewriter{
+    color: #fff;
+    font-family: monospace;
+    font-weight: 0.5rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 1 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .11em; /* Adjust as needed */
+    animation: 
+      typing 5.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  
+  
+/* ABOUT_ME */
+.about-me{
+  text-align: center;
+  width: 60%;
+  margin-left: 22%;
+  margin-top: 25%;
+  font-family: 'Montserrat', sans-serif;
+}
+.abtme{
+  margin-bottom: 5%;
+  font-family: 'Gloock', serif;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: burlywood }
+
+} */
+
+
+.skills-2{
+  margin-top: 0;
+  width: 100%;
+  color: grey;
+  /* background-color: #AACB73; */
+  
+  
+}
+.colm{
+  
+  background-color: black;
+  margin: 2%;
+  width: 10%;
+  margin-left: 17%;
+  
+}
+
+
+.skil{
+  text-align: center;
+  margin-top: 12%;
+  margin-bottom: 5%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SKILLS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+
+.skills_section{
+    margin-top: 100vh;
+    
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color: white(0, 0, 0, 0.082);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    margin-left: 80%;
+    width: 200px;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+    padding: 10px;
+}
+.skills_head h2 span{
+    color: #03C988;
+}
+.skills_main{
+  
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 70%;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(102, 95, 95, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: grey;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 3s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 3s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 80%;
+    animation: sass 3s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .js{
+    width: 80%;
+    animation: css 3s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .react{
+    width: 75%;
+    animation: react 3s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .node{
+    width: 70%;
+    animation: node 3s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .express{
+    width: 65%;
+    animation: express 3s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .mongo{
+    width: 60%;
+    animation: mongo 3s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+
+.cardy{
+  margin: 10px;
+  width: 20%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(69, 69, 69, 0.51);
+  overflow: hidden;
+  justify-content: center;
+  margin-left: 45px;
+}
+.cardy img{
+  border-radius: 20px;
+}
+
+.cardy-b{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100;
+  position: absolute;
+  background: #181918ae;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: 2s;
+  
+}
+
+
+.cardy:hover .cardy-b{
+  display: none;
+  
+}
+.card-project{
+  width: 80%;
+  background-color: rgba(42, 41, 41, 0.225);
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+}
+.card-project img{
+  width: 80%;
+}
+
+.zoom-in {
+  transition: all 0.3s ease-in-out;
+}
+.zoom-in:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+.contact-me{
+  background-color: black;
+  color: black;
+}
+#cnt{
+  color: #fff;
+}
+.btnhover:hover{
+  background-color: #03C988;
+}
+/* PROJECTS */
+.projectt{
+  margin-left: 5%;
+  padding: 3.5%;
+}
+
+.project-button{
+  margin-left: 10%;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #03C988;
+  transition: all .2s ease-in-out;
+}
+
+.social-icons i:hover {
+  color: grey;
+  transform: scale(1.1);
+}
+
+.contact-input{
+  background-color: black;
+  color: #fff;
+}
